@@ -3,7 +3,7 @@
 
 int main () {
    printf ("Assignment not implemented yet.\n"); 
-   printf ("hi");
+   printf ("his");
    
    return EXIT_SUCCESS;
 }
