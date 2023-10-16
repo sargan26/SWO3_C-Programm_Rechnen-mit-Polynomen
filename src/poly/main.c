@@ -2,5 +2,8 @@
 #include <stdlib.h>
 
 int main () {
-   printf ("Assignment not implemented yet.\n"); return EXIT_SUCCESS;
+   printf ("Assignment not implemented yet.\n"); 
+   printf ("hi");
+   
+   return EXIT_SUCCESS;
 }
