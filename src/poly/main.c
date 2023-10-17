@@ -88,17 +88,17 @@ int poly_mult (
    return m + n;
 }
 
-int poly_mult_fast (
-   double const p[], int const m,
-   double const q[], int const n,
-   double       r[]) {
-   // assertions
-   assert(m == n);
-   int k = log2(m + 1);
-   assert(m + 1 == pow(2, k));
-
-   return m + n;
-}
+//int poly_mult_fast (
+//   double const p[], int const m,
+//   double const q[], int const n,
+//   double       r[]) {
+//   // assertions
+//   assert(m == n);
+//   int k = log2(m + 1);
+//   assert(m + 1 == pow(2, k));
+//
+//   return m + n;
+//}
 
 int main () {
    double p1[ARR_SIZE] = {4, 3, -2, 1,};
