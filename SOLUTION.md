@@ -28,26 +28,36 @@ Teile und Herrsche
 
 #### **a)**
 
+Tests zur Ausgabe, negative Potenz ungültig
+
 ![](doc/poly1.png)
 
 ![](doc/poly2.png)
 
 #### **b)**
 
+Tests zur Berechnung des Polynoms
+
 ![](doc/poly3.png)
+
 ![](doc/poly4.png)
 
 
 
 #### **c)**
 
+Test zum Addieren von Polynomen und Angabe des Grades
 
 ![](doc/poly5.png)
+
 ![](doc/poly6.png)
 
 #### **d)**
 
+Test zum Multiplizieren von Polynomen und Angabe des Grades
+
 ![](doc/poly7.png)
+
 ![](doc/poly8.png)
 
 #### **e)**
