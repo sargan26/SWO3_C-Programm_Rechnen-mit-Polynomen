@@ -140,7 +140,7 @@ int poly_mult_fast (
    double hLtemp1[ARR_SIZE],hLtemp2[ARR_SIZE];
 
    for(int i = 0; i <= halfPoly; i++) {
-      pL[i] = pR[i] = qL[i] = qR[i] = hLtemp1[i] = hLtemp1[i] = 0;
+      pL[i] = pR[i] = qL[i] = qR[i] = hLtemp1[i] = hLtemp2[i] = 0;
    }
 
    //init the rest
@@ -158,8 +158,8 @@ int poly_mult_fast (
    highestPolyDeg+= poly_mult_fast (pL, halfPoly, qL, halfPoly, hL);
    highestPolyDeg+= poly_mult_fast (pR, halfPoly, qR, halfPoly, hR);
    
-   int polytemp = poly_add (pL, halfPoly, pR, halfPoly, hLtemp1);
-   polytemp = poly_add (qL, halfPoly, qR, halfPoly, hLtemp2);
+   poly_add (pL, halfPoly, pR, halfPoly, hLtemp1);
+   poly_add (qL, halfPoly, qR, halfPoly, hLtemp2);
 
    highestPolyDeg += poly_mult_fast (hLtemp1, halfPoly, hLtemp2, halfPoly, hM);
    for (int i = 0; i <= m; i++) {
@@ -173,23 +173,20 @@ int poly_mult_fast (
       r[i + m + 1] += hR[i];
    }
    
-   //poly_print(hL,m);
-   
-   //poly_print(r, highestPolyDeg);
    return highestPolyDeg;
 }
 
 int main () {
   double r[ARR_SIZE];
   
-  /* double p1[ARR_SIZE] = {4, 3, -2, 1,};
+   double p1[ARR_SIZE] = {4, 3, -2, 1,};
    poly_print(p1, 3);
    double p2[ARR_SIZE] = {0, 0, 0, 0,};
    poly_print(p2, 3);
+   //assertion fail
    //double p3[ARR_SIZE] = {4, 3, -2, 1,};
    //poly_print(p3, -1);
 
-   //print_array(p1, 4);
    printf("\n");
    double y;
    y = poly_evaluate(p1, 3, 1.5);
@@ -223,7 +220,6 @@ int main () {
    printf("\n");
    printf("degree of polynom = %d\n", poly_mult_fast(p8, 3, p9, 3, r));
    poly_print(r, poly_mult_fast(p8, 3, p9, 3, r));
-   */
 
    double p10[ARR_SIZE] = {1, 1,};
    double p11[ARR_SIZE] = {1, 2,};
