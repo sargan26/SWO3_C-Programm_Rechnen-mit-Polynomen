@@ -20,7 +20,7 @@ Um zwei Polynome zu multiplizieren, muss jeder Koeffizient des einen Polynoms mi
 
 #### **e)**
 
-Teile und Herrsche
+Hier muss man zwei Polynome mit dem Prinzip Teile- und Herrsche multiplizieren. Dabei wird angenommen, dass die beiden Polynome den gleichen Grad haben und die Länge eine Zweierpotenz ist. Die Polynome werden in vier gleich große Hälften aufgeteilt, und mithilfe von Hilfsvariablen wird das Produkt berechnet. Die Funktion muss sich rekursiv so lange selbst aufrufen, bis das Teilproblem gleich genug ist um es zu lösen und nachher wird wieder kombiniert.
 
 ### **Lösungsidee**
 
@@ -28,7 +28,7 @@ Teile und Herrsche
 
 #### **a)**
 
-Tests zur Ausgabe, negative Potenz ungültig
+Tests zur Ausgabe, negative Potenz ungültig. Annahme Anzeige soll auf ganze Zahlen gerundet werden wie in der Angabe.
 
 ![](doc/poly1.png)
 
@@ -61,3 +61,9 @@ Test zum Multiplizieren von Polynomen und Angabe des Grades
 ![](doc/poly8.png)
 
 #### **e)**
+
+Test zum Multiplizieren von Polynomen und Angabe des Grades
+
+![](doc/poly9.png)
+
+![](doc/poly10.png)
