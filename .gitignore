@@ -1,6 +1,7 @@
 # Prerequisites
 *.d
 Gewichtung Beispiele.txt
+main
 
 # Compiled Object files
 *.slo
